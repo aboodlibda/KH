@@ -1,0 +1,810 @@
+/*
+
+[RTL Stylesheet]
+
+Project     : USNews - Multipurpose News, Magazine and Blog HTML5 Template
+Author      : themelooks.com
+Author URI  : https://themeforest.net/user/themelooks
+
+
+NOTE:
+------
+PLEASE DO NOT EDIT THIS CSS, YOU MAY NEED TO USE "custom.css" FILE FOR WRITING YOUR CUSTOM CSS.
+WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SAFER TO USE "custom.css".
+
+
+[TABLE OF CONTENTS]
+
+1. GENERAL STYLES
+
+2. HELPER CLASSES
+
+3. COMPONENTS
+
+4. WIDGETS
+
+5. HEADER SECTION
+
+6. FEATURES SECTION
+
+7. MAIN CONTENT SECTION
+
+8. LOGIN SECTION
+
+9. FOOTER SECTION
+
+10. MEDIA QUERIES
+
+*/
+
+/*------------------------------------*\
+    1. GENERAL STYLES
+\*------------------------------------*/
+body {
+    unicode-bidi: embed;
+}
+
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+    margin-right: 0;
+}
+
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
+.input-group .form-control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group > .btn,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child),
+.input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+    border-radius: 0;
+}
+
+/*------------------------------------*\
+    2. HELPER CLASSES
+\*------------------------------------*/
+.float--left {
+    float: right;
+}
+
+.float--right {
+    float: left;
+}
+
+.pull-left {
+    float: right !important;
+}
+
+.pull-right {
+    float: left !important;
+}
+
+.fm {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.flm {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+/*------------------------------------*\
+    3. COMPONENTS
+\*------------------------------------*/
+.dropdown-menu > .dropdown > .dropdown-menu {
+    left: auto;
+    right: 100%;
+}
+
+.dropdown-menu > .switch--left > .dropdown-menu {
+    left: auto;
+    right: 100%;
+}
+
+.dropdown-menu > .switch--right > .dropdown-menu {
+    left: 100%;
+    right: auto;
+}
+
+.dropdown-left > .dropdown-menu {
+    left: 0;
+    right: auto;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+    border-radius: 0;
+}
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-radius: 0;
+}
+
+.comment--items > li > .comment--items {
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.comment--img {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.comment--header .name {
+    float: right;
+}
+
+.comment--header .date {
+    float: right;
+    margin-left: 0;
+    margin-right: 15px;
+    padding-left: 0;
+    padding-right: 14px;
+    border-left-width: 0;
+    border-right: 1px solid #ccc;
+}
+
+.comment--header .rating {
+    float: left;
+}
+
+.countdown ul li {
+    margin-left: 42px;
+    margin-right: 0;
+}
+
+.countdown ul li:before,
+.countdown ul li:after {
+    left: -24px;
+    right: auto;
+}
+
+.countdown ul li strong:before,
+.countdown ul li strong:after {
+    left: -22px;
+    right: auto;
+}
+
+#backToTop {
+    left: 30px;
+    right: auto;
+}
+
+/*------------------------------------*\
+    4. WIDGETS
+\*------------------------------------*/
+.widget--title {
+    padding-left: 24px;
+    padding-right: 0;
+}
+
+.widget--title .icon {
+    left: 0;
+    right: auto;
+}
+
+.widget--title .nav {
+    left: 0;
+    right: auto;
+}
+
+.social--widget.style--1 .nav > li {
+    float: right;
+}
+
+.social--widget.style--1 .nav > li:nth-child(3n) > a:before {
+    border-right-width: 1px;
+}
+
+.social--widget.style--1 .nav > li:first-child > a:before,
+.social--widget.style--1 .nav > li:nth-child(3n) + li > a:before {
+    border-right-width: 0;
+}
+
+.social--widget.style--6 .nav > li > a > .text {
+    left: 10px;
+    right: -15px;
+}
+
+.search--widget .input-group-btn:first-child > .btn {
+    margin-right: -2px;
+}
+
+.list--widget-nav > .nav > li + li {
+    border-left-width: 1px;
+    border-right-width: 0;
+}
+
+.links--widget .nav > li > a {
+    padding-left: 0;
+    padding-right: 12px;
+}
+
+.links--widget .nav > li > a:before {
+    left: auto;
+    right: 0;
+}
+
+.poll--widget .checkbox label span:before,
+.poll--widget .radio label span:before {
+    left: auto;
+    right: 0;
+}
+
+.poll--widget .checkbox label,
+.poll--widget .radio label {
+    padding-left: 5px;
+    padding-right: 22px;
+}
+
+.poll--widget .checkbox label,
+.poll--widget .checkbox p,
+.poll--widget .radio label,
+.poll--widget .radio p {
+    float: right;
+}
+
+.poll--widget .checkbox p,
+.poll--widget .radio p {
+    text-align: left;
+}
+
+.poll--widget .checkbox p:before,
+.poll--widget .checkbox p span,
+.poll--widget .radio p:before,
+.poll--widget .radio p span {
+    left: 36px;
+    right: 0;
+}
+
+.about--widget > .nav > li > .fa {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+.nav--widget .nav > li > a span {
+    float: right;
+    padding-left: 6px;
+    padding-right: 0;
+}
+
+.nav--widget .nav > li > a span + span {
+    float: left;
+    padding-left: 0;
+    padding-right: 8px;
+}
+
+.cart--widget li {
+    padding-left: 35px;
+    padding-right: 20px;
+}
+
+.cart--widget .img {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.cart--widget .remove {
+    left: 20px;
+    right: auto;
+}
+
+.cart--widget .footer .amount p {
+    float: right;
+}
+
+.cart--widget .footer .amount p + p {
+    float: left;
+}
+
+.cart--widget .footer .actions .btn-primary {
+    float: left;
+}
+
+.tags--widget .nav > li > a {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/*------------------------------------*\
+    5. HEADER SECTION
+\*------------------------------------*/
+.header--topbar .nav {
+    margin-left: -10px;
+    margin-right: 15px;
+    padding-left: 0;
+    padding-right: 5px;
+    border-left-width: 0;
+    border-right: 1px solid #555;
+}
+
+.header--topbar .nav:first-child {
+    margin-right: -10px;
+    padding-right: 0;
+    border-right-width: 0;
+}
+
+.header--style-4 .navbar-toggle {
+    left: auto;
+    right: 15px;
+}
+
+.header--topbar .dropdown-menu {
+    margin-left: 0;
+    margin-right: -15px;
+}
+
+.header--search-form {
+    text-align: left;
+}
+
+.header--style-4 .header--search-form {
+    left: 15px;
+    right: auto;
+}
+
+.header--search-form .form-control {
+    left: 0;
+    right: auto;
+}
+
+.header--search-form.active .btn {
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+.header--menu-links > .dropdown-left:first-child > .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+.megamenu--filter .nav > li > a:hover > .fa,
+.megamenu--filter .nav > li.active > a > .fa {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+/*------------------------------------*\
+    6. FEATURES SECTION
+\*------------------------------------*/
+.feature--item .icon {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+/*------------------------------------*\
+    7. MAIN CONTENT SECTION
+\*------------------------------------*/
+.posts--filter-bar .nav > li:first-child > a {
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.posts--filter-bar .nav > li:first-child > a:before {
+    border-right-width: 0;
+}
+
+.posts--filter-bar .nav > li:last-child > a {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.posts--filter-bar .nav > li:last-child > a:before {
+    border-right-width: 1px;
+}
+
+.posts--filter-bar.style--2 .nav > li > a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.posts--filter-bar.style--2 .nav > li:first-child > a:before {
+    border-right-width: 1px;
+    border-left-width: 0;
+}
+
+.posts--filter-bar.style--2 .nav > li:last-child > a:before {
+    border-left-width: 1px;
+}
+
+.posts--filter-bar.style--5 .nav > li > a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.posts--filter-bar.style--5 .nav > li + li > a {
+    margin-left: 0;
+    margin-right: -1px;
+}
+
+.posts--filter-bar.style--5 .nav > li > a > i {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+.posts--filter-bar .nav > li:first-child > a:before {
+    border-right-width: 1px;
+}
+
+.news--ticker .title {
+    float: right;
+}
+
+.news--ticker .title h2 {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.post--map .btn-link i {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.post--img a.cat {
+    left: auto;
+    right: 15px;
+}
+
+.post--img .icon {
+    left: 15px;
+    right: auto;
+}
+
+.post--items-title {
+    padding-left: 57px;
+    padding-right: 0;
+}
+
+.post--items-title .nav {
+    left: 0;
+    right: auto;
+}
+
+.post--item.post--layout-3 .post--img .thumb,
+.post--item.post--layout-4 .post--img .thumb {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.post--content .list {
+    padding-right: 0;
+}
+
+.post--content .list li:before {
+    display: none;
+}
+
+.post--content .list li:after {
+    content: "\f104";
+    margin-left: 8px;
+    font-family: "FontAwesome";
+}
+
+.post--content blockquote,
+.comment--content blockquote {
+    border-right-width: 0;
+}
+
+.post--content blockquote:before,
+.comment--content blockquote:before {
+    left: auto;
+    right: 0;
+}
+
+.post--content blockquote footer:before,
+.comment--content blockquote footer:before {
+    left: auto;
+    right: 0;
+}
+
+.post--author-info .img {
+    left: auto;
+    right: -1px;
+}
+
+.post--author-info {
+    padding-left: 30px;
+    padding-right: 180px;
+}
+
+.post--author-info .info .social > li {
+    float: right;
+}
+
+.post--nav > .nav > li + li {
+    text-align: left;
+}
+
+.pricing--content .price-tag p sub {
+    padding-right: 5px;
+}
+
+.pricing--content .price-tag p sub:before {
+    right: -5px;
+}
+
+.pricing--content .features .nav > li > span {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.pricing--content .features .nav > li > span:before {
+    left: auto;
+    right: 0;
+}
+
+.product--item .img .actions .btn .fa {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+.product--summery .rating .nav {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.product--summery .cart .quantity,
+.product--summery .cart .btn {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.product--summery .meta > li + li {
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.product--summery .meta.social > li:first-child + li {
+    border-right-width: 0;
+}
+
+.product--summery .meta.social > li:last-child {
+    border-right-width: 1px;
+}
+
+.post--items-title .icon {
+    left: 0;
+    right: auto;
+}
+
+.product--single .tab-nav > li:first-child > a {
+    border-right-width: 1px;
+}
+
+.product--single .tab-nav > li:last-child > a {
+    border-left-width: 1px;
+}
+
+.checkout--info-form .checkbox span {
+    padding-left: 0;
+    padding-right: 19px;
+}
+
+.checkout--info-form .checkbox span:before,
+.checkout--info-form .checkbox span:after {
+    left: auto;
+    right: 0;
+}
+
+.checkout--billing-info .panel-group .panel-title label span {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.checkout--billing-info .panel-group .panel-title label span:before {
+    left: auto;
+    right: 0;
+}
+
+.checkout--billing-info .panel-group .panel-title label span:after {
+    left: auto;
+    right: 3px;
+}
+
+.checkout--billing-info .checkbox > label > span {
+    padding-left: 0;
+    padding-right: 19px;
+}
+
+.checkout--billing-info label {
+    padding-right: 0;
+}
+
+.checkout--billing-info .checkbox > label > span:before,
+.checkout--billing-info .checkbox > label > span:after {
+    left: auto;
+    right: 0;
+}
+
+.faq--item .panel-body {
+    margin-left: 0;
+    margin-right: 8px;
+    border-left-width: 0;
+    border-right: 1px solid #ddd;
+}
+
+.faq--item .panel-title a {
+    padding-left: 0;
+    padding-right: 24px;
+}
+
+.faq--item .panel-title a:before {
+    left: auto;
+    right: 0;
+}
+
+.contact--cats .nav > li:nth-child(3n) {
+    padding-left: 0;
+    padding-right: 18px;
+    border-right-width: 1px;
+}
+
+.contact--cats .nav > li:first-child,
+.contact--cats .nav > li:nth-child(3n) + li {
+    padding-left: 18px;
+    padding-right: 0;
+    border-right-width: 0;
+}
+
+.contact--info .title .fa {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+/*------------------------------------*\
+    8. LOGIN SECTION
+\*------------------------------------*/
+.login--form label span {
+    text-align: right;
+}
+
+.login--form .checkbox span:before {
+    left: auto;
+    right: 0;
+}
+
+.login--form .checkbox span:after {
+    left: auto;
+    right: 1px;
+}
+
+/*------------------------------------*\
+    9. FOOTER SECTION
+\*------------------------------------*/
+.footer--copyright .links {
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.footer--copyright .social {
+    padding-left: 0;
+    padding-right: 22px;
+}
+
+/*------------------------------------*\
+    10. MEDIA QUERIES
+\*------------------------------------*/
+@media screen and (max-width: 991px) {
+    .float--sm-none {
+        float: none;
+    }
+
+    .comment--items > li > .comment--items {
+        padding-right: 0;
+    }
+
+    .header--style-3 .navbar-toggle {
+        left: auto;
+        right: 15px;
+    }
+
+    .header--menu-links {
+        float: none;
+    }
+
+    .header--menu-links > li {
+        float: none;
+    }
+
+    .header--style-3 .header--search-form {
+        left: 15px;
+        right: auto;
+    }
+
+    .contact--cats .nav > li:nth-child(2n) {
+        padding-left: 0;
+        padding-right: 18px;
+        border-right-width: 1px;
+    }
+
+    .contact--cats .nav > li:nth-child(3n) + li {
+        padding-left: 0;
+        padding-right: 18px;
+        border-right-width: 1px;
+    }
+
+    .contact--cats .nav > li:nth-child(2n) + li {
+        padding-left: 18px;
+        padding-right: 0;
+        border-right-width: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .float--xs-none {
+        float: none;
+    }
+
+    .header--navbar .navbar-header {
+        float: right;
+        margin-right: 0;
+    }
+
+    .header--style-3 .navbar-header,
+    .header--style-4 .navbar-header {
+        float: none;
+    }
+
+    .header--menu-links > .dropdown > .dropdown-menu > li > a,
+    .header--navbar .dropdown-menu > .dropdown > .dropdown-menu > li > a {
+        padding-top: 9px;
+        padding-bottom: 10px;
+    }
+
+    .cart--items .table tbody tr td {
+        padding-left: 15px;
+        padding-right: 152px;
+        text-align: left;
+    }
+
+    .cart--items .table tbody tr td:before {
+        left: auto;
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .col-xxs-12 {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .pagination {
+        float: none;
+    }
+
+    .contact--cats .nav > li,
+    .contact--cats .nav > li:first-child,
+    .contact--cats .nav > li:nth-child(2n) + li {
+        padding-left: 0;
+    }
+
+    .contact--cats .nav > li:nth-child(2n) {
+        padding-right: 0;
+    }
+
+    .contact--cats .nav > li:nth-child(3n) + li {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .post--author-info {
+        padding-right: 30px;
+    }
+
+    .post--author-info .img {
+        right: 0;
+    }
+}
